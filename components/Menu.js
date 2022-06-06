@@ -18,7 +18,7 @@ const Menu = () => {
         <Text style={styles.title}>GULLAR</Text>
       </View>
       <Text style={[styles.title2, {color: 'red'}]}>SUBSCRIBE TO WATCH</Text>
-      <Text style={(styles.title2, {color: 'white'})}>Recommended</Text>
+      <Text style={(styles.title2, {color: 'white',marginBottom:10})}>Recommended</Text>
       <View style={styles.menuContainer}>
         <View style={styles.card}>
           <Text style={[styles.title2, {color: 'white'}]}>GENERAL PLAN</Text>
@@ -173,6 +173,11 @@ const Menu = () => {
             <Text style={styles.text}>Help</Text>
             <Text style={styles.text}>Signup/login</Text>
         </View>
+        <View style={styles.footer}>
+          <Text style={styles.copyright}>Terms of use</Text>
+          <Text style={styles.copyright}>Version 1.1.20</Text>
+          <Text style={styles.copyright}>Privacy Policy</Text>
+        </View>
       </View>
     </ScrollView>
   );
@@ -200,7 +205,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 20,
-    marginTop: 10,
     marginBottom: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#e6e6e6',
@@ -233,12 +237,11 @@ const styles = StyleSheet.create({
   },
   card: {
     alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 10,
-    paddingVertical: 10,
-    marginTop: 10,
-    borderRadius: 10,
+    justifyContent: 'space-around',
+    marginBottom: 20,
     backgroundColor: 'red',
+    borderRadius: 10,
+    padding: 10,
   },
   cardContent: {
     flexDirection: 'row',
@@ -314,10 +317,24 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#eaeaea',
+    marginBottom: 20,
   },
   text: {
     fontSize: 18,
     color: 'white',
     fontFamily: 'Nunito-Bold',
+  },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  copyright: {
+    flex:1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 12,
+    color: 'gray',
+    fontFamily: 'Nunito-Regular',
   },
 });

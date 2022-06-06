@@ -31,7 +31,7 @@ export default function DrawerMenu() {
         headerShown: false,
         drawerType: 'front',
         drawerStyle:{
-            width:'80%',
+            width:'90%',
             backgroundColor: 'rgba(52, 52, 52, 0.8)',
                  },
     }
