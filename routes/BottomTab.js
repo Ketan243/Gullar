@@ -9,6 +9,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import ProductDetails from '../components/ProductDetails';
 import React from 'react';
 import {Text} from 'react-native';
+import VideoPlayer from '../components/VideoPlayer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -26,7 +27,7 @@ export default function BottomTabs() {
         }}
       >
         <Stack.Screen name="HomeTab" component={DrawerMenu} />
-        <Stack.Screen name="Details" component={ProductDetails} />
+        <Stack.Screen name="Details" component={VideoPlayer} />
         
       </Stack.Navigator>
     </NavigationContainer>
