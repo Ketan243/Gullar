@@ -19,6 +19,8 @@ target 'Gullar' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'react-native-orientation', :path => '../node_modules/react-native-orientation'
+
   target 'GullarTests' do
     inherit! :complete
     # Pods for testing

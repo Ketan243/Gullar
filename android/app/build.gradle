@@ -266,7 +266,8 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
-
+    
+    
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }
@@ -287,6 +288,7 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
 }
 
 if (isNewArchitectureEnabled()) {
